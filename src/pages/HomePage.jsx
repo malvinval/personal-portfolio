@@ -1,6 +1,10 @@
+import Navbar from "../components/Navbar";
+
 const HomePage = () => {
     const element = (
-        <h1 className="text-5xl">Test Homepage</h1>
+        <div>
+            <Navbar />
+        </div>
     );
 
     return element;
