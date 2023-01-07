@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         'poppins': ['poppins', 'sans-serif'],
       },
+      backgroundColor: {
+        "#205295": "#205295"
+      }
     },
   },
   plugins: [require("daisyui")],
