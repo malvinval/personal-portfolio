@@ -20,7 +20,7 @@ const Navbar = () => {
     });
 
     const element = (    
-        <div className={`${fixed ? 'fixed' : 'static'} navbar font-poppins bg-white shadow-md text-black`}>
+        <div className={`${fixed ? 'fixed' : 'static'} navbar font-poppins bg-white shadow-md text-black z-50`}>
             <div className="navbar-start lg:justify-center p-0">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
