@@ -20,8 +20,8 @@ const Navbar = () => {
     });
 
     const element = (    
-        <div className={`${fixed ? 'fixed' : 'static'} navbar font-poppins bg-white bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-25 border border-gray-100`}>
-            <div className="navbar-start p-0">
+        <div className={`${fixed ? 'fixed' : 'static'} navbar font-poppins bg-white shadow-md text-black`}>
+            <div className="navbar-start lg:justify-center p-0">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -40,8 +40,8 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            <div className="navbar-end">
-                <Link className="btn bg-gray-900">Resume</Link>
+            <div className="navbar-end lg:justify-center">
+                <Link className="btn bg-gray-900 text-white">Resume</Link>
             </div>
         </div>
     );
