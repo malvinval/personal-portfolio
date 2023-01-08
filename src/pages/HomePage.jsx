@@ -46,17 +46,17 @@ const HomePage = () => {
                                 <h1 className="text-4xl text-black lg:text-7xl font-extrabold">Web Developer</h1>
                             </div>
                         </div>
-                        <div className="pt-8 pb-5 text-center md:text-justify lg:w-3/4"
+                        <div className="pt-8 pb-5 text-justify lg:w-3/4"
                             data-aos="fade-down"
                             data-aos-once="true"
                             data-aos-delay="900">
                             <p>I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative. I am able to work well under pressure and adhere to strict deadlines.</p>
                         </div>
-                        <div className="pb-8 text-center md:text-justify lg:w-3/4"
+                        <div className="pb-8 text-justify lg:w-3/4"
                             data-aos="fade-down"
                             data-aos-once="true"
                             data-aos-delay="600">
-                            <p>For the last 3 years, I have been developing websites using JavaScript, PHP, Bootstrap Framework, TailwindCSS, Vue.js, React.js, and Laravel.</p>
+                            <p>For the last 3 years, I have been developing website apps using JavaScript, PHP, Bootstrap Framework, TailwindCSS, Vue.js, React.js, and Laravel.</p>
                         </div>
                         <div className="text-center lg:text-left"
                             data-aos="fade-right"
