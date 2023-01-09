@@ -55,16 +55,16 @@ const HomePage = () => {
                         <div className="pb-8 text-justify lg:w-3/4"
                             data-aos="fade-down"
                             data-aos-once="true"
-                            data-aos-delay="600">
+                            data-aos-delay="100">
                             <p className="text-gray-700">For the last 3 years, I have been developing website apps using JavaScript, PHP, Bootstrap Framework, TailwindCSS, Vue.js, React.js, and Laravel.</p>
                         </div>
                         <div className="text-center lg:text-left"
                             data-aos="fade-right"
                             data-aos-once="true"
                             data-aos-delay="500">
-                            <Link to={"/"} smooth="true" duration={500} className="group btn bg-#205295 cursor-pointer text-white">
+                            <Link to={"/about"} smooth="true" duration={500} className="group btn bg-#205295 cursor-pointer text-white">
                                 Read more about me
-                                <span className="group-hover:rotate-90 duration-300">
+                                <span>
                                     <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
                                 </span>
                             </Link>
