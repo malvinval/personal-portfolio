@@ -50,19 +50,19 @@ const HomePage = () => {
                             data-aos="fade-down"
                             data-aos-once="true"
                             data-aos-delay="900">
-                            <p>I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative. I am able to work well under pressure and adhere to strict deadlines.</p>
+                            <p className="text-gray-700">I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative. I am able to work well under pressure and adhere to strict deadlines.</p>
                         </div>
                         <div className="pb-8 text-justify lg:w-3/4"
                             data-aos="fade-down"
                             data-aos-once="true"
                             data-aos-delay="600">
-                            <p>For the last 3 years, I have been developing website apps using JavaScript, PHP, Bootstrap Framework, TailwindCSS, Vue.js, React.js, and Laravel.</p>
+                            <p className="text-gray-700">For the last 3 years, I have been developing website apps using JavaScript, PHP, Bootstrap Framework, TailwindCSS, Vue.js, React.js, and Laravel.</p>
                         </div>
                         <div className="text-center lg:text-left"
                             data-aos="fade-right"
                             data-aos-once="true"
                             data-aos-delay="500">
-                            <Link to={"/"} smooth="true" duration={500} className="group btn bg-#205295 cursor-pointer">
+                            <Link to={"/"} smooth="true" duration={500} className="group btn bg-#205295 cursor-pointer text-white">
                                 Read more about me
                                 <span className="group-hover:rotate-90 duration-300">
                                     <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
