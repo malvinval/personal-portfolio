@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
+import About from './pages/About';
 import HomePage from './pages/HomePage';
 import reportWebVitals from './reportWebVitals';
 
@@ -9,6 +10,15 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />,
+    children: [
+      {
+        
+      },
+    ],
+  },
+  {
+    path: "/about",
+    element: <About />,
     children: [
       {
         
