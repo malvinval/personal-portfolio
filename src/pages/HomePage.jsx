@@ -16,8 +16,8 @@ const HomePage = () => {
         });
     }, []);
 
-    const particlesInit = (main) => {
-        loadFull(main);
+    const particlesInit = async (main) => {
+        await loadFull(main);
     };
 
     const element = (
