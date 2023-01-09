@@ -3,24 +3,24 @@ import { Link } from "react-router-dom";
 import NavLinks from "./NavLinks";
 
 const Navbar = () => {
-    const [fixed,setFixed] = React.useState(false);
+    // const [fixed,setFixed] = React.useState(false);
 
-    const scrollEffect = () => {
-        window.onscroll = () => {
-            if (window.scrollY > 50) {
-                setFixed(true);
-            } else {
-                setFixed(false);
-            }
-        };
-    };
+    // const scrollEffect = () => {
+    //     window.onscroll = () => {
+    //         if (window.scrollY > 50) {
+    //             setFixed(true);
+    //         } else {
+    //             setFixed(false);
+    //         }
+    //     };
+    // };
 
-    React.useEffect(() => {
-        scrollEffect();
-    });
+    // React.useEffect(() => {
+    //     scrollEffect();
+    // });
 
     const element = (    
-        <div className={`${fixed ? 'fixed' : 'static'} navbar font-poppins bg-white shadow-md text-black z-50`}>
+        <div className="fixed navbar font-poppins bg-white shadow-md text-black z-50">
             <div className="navbar-start lg:justify-center p-0 z-50">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
