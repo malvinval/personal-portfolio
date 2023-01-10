@@ -5,12 +5,6 @@ import './index.css';
 import About from './pages/About';
 import HomePage from './pages/HomePage';
 import reportWebVitals from './reportWebVitals';
-import AOS from 'aos';
-import "aos/dist/aos.css";
-
-AOS.init({
-    duration : 500
-});
 
 const router = createBrowserRouter([
   {
