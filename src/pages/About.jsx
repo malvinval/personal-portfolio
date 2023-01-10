@@ -33,12 +33,12 @@ const About = () => {
                         <AboutPageTitle title="Skills" />
                         <div className="w-full lg:w-1/2 flex justify-center items-center py-20">
                             <ol className="relative border-l border-gray-200 w-full">
-                                <SkillsItem title="HTML5 & CSS3" />
-                                <SkillsItem title="JavaScript ES6" />
-                                <SkillsItem title="Bootstrap Framework" />
-                                <SkillsItem title="TailwindCSS & daisyUI" />
-                                <SkillsItem title="PHP" />
-                                <SkillsItem title="Laravel" />
+                                <SkillsItem aos_delay="300" title="HTML5 & CSS3" />
+                                <SkillsItem aos_delay="400" title="JavaScript ES6" />
+                                <SkillsItem aos_delay="500" title="Bootstrap Framework" />
+                                <SkillsItem aos_delay="600" title="TailwindCSS & daisyUI" />
+                                <SkillsItem aos_delay="700" title="PHP" />
+                                <SkillsItem aos_delay="800" title="Laravel" />
                             </ol>
                         </div>
                     </div>

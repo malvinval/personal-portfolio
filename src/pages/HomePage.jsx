@@ -2,20 +2,12 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import MalvinValImage from "../img/MalvinVal.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import AOS from 'aos';
 import React from "react";
-import "aos/dist/aos.css";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import ParticleConfig from "../particles/particlesjs-config.json";
 
 const HomePage = () => {
-    React.useEffect(() => {
-        AOS.init({
-            duration : 1000
-        });
-    }, []);
-
     const particlesInit = async (main) => {
         await loadFull(main);
     };

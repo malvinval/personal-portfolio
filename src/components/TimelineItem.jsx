@@ -1,16 +1,9 @@
-import AOS from 'aos';
 import "aos/dist/aos.css";
 import React from "react";
 import {IoMdSchool} from "react-icons/io";
 import {FaSchool} from "react-icons/fa";
 
 const TimelineItem = (props) => {
-    React.useEffect(() => {
-        AOS.init({
-            duration : 1000
-        });
-    }, []);
-
     const educationIcon = props.current ? <FaSchool className="text-blue-600 w-4 h-4" /> : <IoMdSchool className="text-blue-600 w-5 h-5" />;
     
     const element = (
