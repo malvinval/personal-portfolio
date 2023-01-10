@@ -36,7 +36,7 @@ const About = () => {
                     </div>
                     <div className="w-full lg:w-1/2 flex justify-center items-center py-20">
                     <ol className="relative border-l border-gray-200">                  
-                        <TimelineItem aos_delay="300" title="Universitas Singaperbangsa Karawang" time="2021 - Present" description="Majoring in Informatics" latest />
+                        <TimelineItem aos_delay="300" title="Universitas Singaperbangsa Karawang" time="2021 - Present" description="Bachelor of Computer Science" current />
                         <TimelineItem aos_delay="400" title="SMAN 5 Tambun Selatan" time="2018 - 2021" description="Majoring in Science" />
                         <TimelineItem aos_delay="500" title="SMP Santa Lusia" time="2015 - 2018" description="3 years of happiness" /> 
                         <TimelineItem aos_delay="600" title="SD Santa Lusia" time="2009 - 2015" description="The troublemaker" />
