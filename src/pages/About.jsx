@@ -22,7 +22,7 @@ const About = () => {
         <>
             <Navbar />
 
-            <div className="h-screen w-full flex justify-center font-poppins bg-white pt-16">
+            <div className="h-full w-full flex justify-center font-poppins bg-white pt-16">
             <Particles id="tsparticles" options={ParticleConfig} init={particlesInit} />
                 <div className="bg-white w-3/4 h-3/4 mt-20 flex flex-col lg:flex-row">
                     <div className="w-full lg:w-1/2 flex justify-center items-center">
