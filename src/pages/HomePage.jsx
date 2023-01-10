@@ -19,10 +19,10 @@ const HomePage = () => {
             <div className="h-full lg:h-screen w-full flex justify-center font-poppins bg-white pt-16">
                 <Particles id="tsparticles" options={ParticleConfig} init={particlesInit} />
                 <div className="bg-white w-3/4 h-3/4 mt-20 flex flex-col lg:flex-row">
-                    <div className="w-full lg:w-1/2 flex justify-center items-center">
+                    <div className="w-full lg:w-1/2 flex justify-center items-center z-30">
                         <img src={MalvinValImage} alt="MalvinVal'sImage" id="profile-image" className="w-full lg:w-3/5 md:w-3/5" />
                     </div>
-                    <div className="w-full lg:w-1/2 py-20 flex flex-col justify-center">
+                    <div className="w-full lg:w-1/2 py-20 flex flex-col justify-center z-30">
                         <div className="text-center lg:text-left">
                             <div className="py-3">
                                 <h1 className="text-4xl text-slate-600">Hi, there! I'm a</h1>
