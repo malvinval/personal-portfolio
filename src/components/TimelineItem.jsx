@@ -1,4 +1,3 @@
-import "aos/dist/aos.css";
 import React from "react";
 import {IoMdSchool} from "react-icons/io";
 import {FaSchool} from "react-icons/fa";
