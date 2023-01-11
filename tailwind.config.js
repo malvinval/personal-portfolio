@@ -7,7 +7,10 @@ module.exports = {
         'poppins': ['poppins', 'sans-serif'],
       },
       backgroundColor: {
-        "#205295": "#205295"
+        "#0974f1": "#0974f1"
+      },
+      textDecorationColor: {
+        "#0974f1": "#0974f1"
       }
     },
   },

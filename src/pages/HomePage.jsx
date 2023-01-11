@@ -25,10 +25,10 @@ const HomePage = () => {
                     <div className="w-full lg:w-1/2 py-20 flex flex-col justify-center z-30">
                         <div className="text-center lg:text-left">
                             <div className="py-3">
-                                <h1 className="text-4xl text-slate-600">Hi, there! I'm a</h1>
+                                <h1 className="text-3xl text-gray-800 font-bold tracking-wide">Hi, there! I'm a</h1>
                             </div>
                             <div>
-                                <h1 className="text-4xl text-black lg:text-7xl font-extrabold">Web Developer</h1>
+                                <h1 className="text-4xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#01aae7] to-[#0974f1]">Web Developer</h1>
                             </div>
                         </div>
                         <div className="pt-8 pb-5 text-justify lg:w-3/4">
@@ -38,7 +38,7 @@ const HomePage = () => {
                             <p className="text-gray-700">For the last 3 years, I have been developing website apps using JavaScript, PHP, Bootstrap Framework, TailwindCSS, Vue.js, React.js, and Laravel.</p>
                         </div>
                         <div className="text-center lg:text-left">
-                            <Link to={"/about"} className="group btn bg-#205295 cursor-pointer text-white">
+                            <Link to={"/about"} className="group btn bg-gradient-to-r from-[#01aae7] to-[#0974f1] cursor-pointer text-white border-0">
                                 Read more about me
                                 <span>
                                     <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
