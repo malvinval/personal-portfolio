@@ -6,7 +6,7 @@ const ExperienceItem = (props) => {
 
     const element = (
         <div tabIndex={0} className="collapse"> 
-            <div onClick={() => {setIsDetailed(!isDetailed)}} className="collapse-title item-experience flex justify-between hover:bg-blueDark text-left p-4 rounded-md text-white font-semibold cursor-pointer bg-gray-700">
+            <div onClick={() => {setIsDetailed(!isDetailed)}} className="collapse-title item-experience flex justify-between items-center text-left p-4 rounded-md text-white font-semibold cursor-pointer bg-gray-700">
                 <p>{props.title}</p>
                 <IoIosArrowDown />
             </div>
