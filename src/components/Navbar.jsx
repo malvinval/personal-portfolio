@@ -30,7 +30,7 @@ const Navbar = () => {
                         <NavLinks />
                     </ul>
                 </div>
-                <Link className="hidden normal-case font-bold text-lg md:block z-50">Malvin Valerian</Link>
+                <Link className="hidden normal-case font-semibold text-lg md:block z-50">Malvin Valerian</Link>
                 <Link className="block normal-case font-bold text-lg md:hidden z-50">Malvin Val</Link>
             </div>
 

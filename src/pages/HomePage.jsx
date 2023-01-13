@@ -25,7 +25,7 @@ const HomePage = () => {
                     <div className="w-full lg:w-1/2 py-20 flex flex-col justify-center z-30">
                         <div className="text-center lg:text-left">
                             <div className="py-3">
-                                <h1 className="text-3xl text-gray-800 font-bold tracking-wide">Hi, there! I'm a</h1>
+                                <h1 className="text-3xl text-gray-800 font-bold tracking-normal">Hi, there! I'm a</h1>
                             </div>
                             <div>
                                 <h1 className="text-4xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#01aae7] to-[#0974f1]">Web Developer</h1>
