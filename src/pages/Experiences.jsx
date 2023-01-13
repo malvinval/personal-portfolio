@@ -15,9 +15,9 @@ const Experiences = () => {
         <>
             <Navbar />
 
-            <div className="h-full lg:h-screen w-full flex justify-center items-center font-poppins bg-white pt-16">
+            <div className="w-full h-screen flex justify-center items-center font-poppins bg-white">
                 <Particles id="tsparticles" options={ParticleConfig} init={particlesInit} />
-                <div className="w-full lg:w-2/5 flex flex-col justify-center items-center pt-16 lg:pt-0 z-30">
+                <div className="w-full lg:w-2/5 flex flex-col justify-center items-center z-30">
                     <div className="z-30 w-full md:w-3/4 lg:w-full relative">
                         <BsStars className="text-7xl absolute right-28 md:right-48 lg:right-40 -top-6 text-pink-300 text-opacity-100" />
                         <h1 className="absolute left-0 right-0 text-center text-3xl lg:text-4xl font-extrabold text-gray-800 underline decoration-pink-500">Relevant Experience</h1>
