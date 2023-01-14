@@ -14,8 +14,8 @@ const ExperienceItem = (props) => {
                 </div>
                 <IoIosArrowDown />
             </div>
-            <div className="collapse-content rounded-md mt-2 text-left bg-gradient-to-b from-slate-100 via-slate-50 to-slate-50"> 
-                <p className="py-5 text-base text-gray-500 font-medium">{props.desc}</p>
+            <div className="collapse-content rounded-md mt-2 text-justify bg-gradient-to-b from-slate-100 via-slate-50 to-slate-50"> 
+                <p className="py-5 text-base text-gray-500 font-medium leading-8">{props.desc}</p>
             </div>
         </div>
     );
