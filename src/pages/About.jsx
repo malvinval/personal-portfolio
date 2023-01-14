@@ -6,6 +6,7 @@ import ParticleConfig from "../particles/particlesjs-config.json";
 import React from "react";
 import AboutPageTitleAndDesc from "../components/AboutPageTitleAndDesc";
 import SkillsItem from "../components/SkillsItem";
+import { FcCheckmark } from "react-icons/fc";
 import { SiHtml5, SiJavascript, SiBootstrap, SiTailwindcss, SiPhp, SiLaravel, SiGithub, SiCss3, SiReact, SiVuedotjs, SiMysql, SiNextdotjs } from "react-icons/si";
 
 const About = () => {
@@ -28,8 +29,8 @@ const About = () => {
                                 <ol className="relative border-l border-gray-200 w-full">                  
                                     <TimelineItem title="Universitas Singaperbangsa Karawang" link="https://www.unsika.ac.id" time="2021 - Present" description="Bachelor of Computer Science" current />
                                     <TimelineItem title="SMAN 5 Tambun Selatan" link="http://sman5tamsel.sch.id/" time="2018 - 2021" description="Majoring in Science" />
-                                    <TimelineItem title="SMP Santa Lusia" link="https://sekolah.data.kemdikbud.go.id/index.php/Chome/profil/50E14006-2DF5-E011-9E3D-89479A48376B" time="2015 - 2018" description="3 years of happiness" /> 
-                                    <TimelineItem title="SD Santa Lusia" link="https://sdsantalusiabekasi.sch.id/" time="2009 - 2015" description="The troublemaker" />
+                                    <TimelineItem title="SMP Santa Lusia" link="https://sekolah.data.kemdikbud.go.id/index.php/Chome/profil/50E14006-2DF5-E011-9E3D-89479A48376B" time="2015 - 2018" description={<FcCheckmark />} /> 
+                                    <TimelineItem title="SD Santa Lusia" link="https://sdsantalusiabekasi.sch.id/" time="2009 - 2015" description={<FcCheckmark />} />
                                 </ol>
                             </div>
                         </div>
