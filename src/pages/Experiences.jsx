@@ -22,7 +22,7 @@ const Experiences = () => {
             <div className="w-full h-screen bg-white">
                 <div className="w-full flex justify-center items-center font-poppins pt-16">
                     <Particles id="tsparticles" options={ParticleConfig} init={particlesInit} />
-                    <div className="w-full lg:w-2/5 flex flex-col justify-center items-center z-30 mt-16 lg:mt-36">
+                    <div className="w-full lg:w-2/5 flex flex-col justify-center items-center z-30 mt-20 lg:mt-36">
                         <div className="z-30 w-full md:w-3/4 lg:w-full relative">
                             <BsStars className="text-7xl absolute right-28 md:right-48 lg:right-40 -top-6 text-pink-300 text-opacity-100" />
                             <h1 className="absolute left-0 right-0 text-center text-3xl lg:text-4xl font-extrabold text-gray-800 underline decoration-pink-500">Relevant Experience</h1>
