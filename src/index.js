@@ -6,6 +6,7 @@ import About from './pages/About';
 import HomePage from './pages/HomePage';
 import Experiences from './pages/Experiences';
 import Projects from './pages/Projects';
+import Achievements from './pages/Achievements';
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -39,6 +40,15 @@ const router = createBrowserRouter([
   {
     path: "/projects",
     element: <Projects />,
+    children: [
+      {
+        
+      },
+    ],
+  },
+  {
+    path: "/achievements",
+    element: <Achievements />,
     children: [
       {
         
