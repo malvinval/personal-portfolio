@@ -5,6 +5,7 @@ import './index.css';
 import About from './pages/About';
 import HomePage from './pages/HomePage';
 import Experiences from './pages/Experiences';
+import Projects from './pages/Projects';
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -29,6 +30,15 @@ const router = createBrowserRouter([
   {
     path: "/experiences",
     element: <Experiences />,
+    children: [
+      {
+        
+      },
+    ],
+  },
+  {
+    path: "/projects",
+    element: <Projects />,
     children: [
       {
         
