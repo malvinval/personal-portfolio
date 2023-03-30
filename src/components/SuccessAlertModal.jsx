@@ -1,4 +1,4 @@
-const AlertModal = (props) => {
+const SuccessAlertModal = (props) => {
     const { isMessageSent } = props;
     const element = (
         <>
@@ -14,4 +14,4 @@ const AlertModal = (props) => {
     return isMessageSent ? element : "";
 };
 
-export default AlertModal;
+export default SuccessAlertModal;

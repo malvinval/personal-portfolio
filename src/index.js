@@ -8,6 +8,7 @@ import Experiences from './pages/Experiences';
 import Contacts from './pages/Contacts';
 import Achievements from './pages/Achievements';
 import reportWebVitals from './reportWebVitals';
+import ContactsPageErrorElement from './pages/ContactsPageErrorElement';
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,7 @@ const router = createBrowserRouter([
         
       },
     ],
+    errorElement: <ContactsPageErrorElement />,
   },
   {
     path: "/achievements",
