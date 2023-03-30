@@ -5,7 +5,7 @@ import './index.css';
 import About from './pages/About';
 import HomePage from './pages/HomePage';
 import Experiences from './pages/Experiences';
-import Projects from './pages/Projects';
+import Contacts from './pages/Contacts';
 import Achievements from './pages/Achievements';
 import reportWebVitals from './reportWebVitals';
 
@@ -38,8 +38,8 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/projects",
-    element: <Projects />,
+    path: "/contacts",
+    element: <Contacts />,
     children: [
       {
         
