@@ -23,7 +23,7 @@ const Projects = () => {
                         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md rounded-lg mt-10 lg:mt-20">
                             <h2 class="mb-4 text-2xl lg:text-4xl tracking-tight font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#01aae7] to-[#0974f1]">Give me a feedback !</h2>
                             <p class="mb-8 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">I would love to receive any feedbacks from you. Send it <span className="underline">anonymously</span> via the form below!</p>
-                            <AlertModal isMessageSent={state.succeeded ? "true":""} status="success" title="Your message successfully sent!" />
+                            <AlertModal isMessageSent={state.succeeded ? "true":""} title="Your message successfully sent!" />
                             <form onSubmit={handleSubmit} class="space-y-8">
                                 <div>
                                     <label for="subject" class="block mb-2 text-sm font-medium text-gray-700">Subject</label>
