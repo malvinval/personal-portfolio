@@ -9,6 +9,7 @@ import LabKompUnsikaLogo from "../img/labkompunsika.png";
 import OuseanLogo from "../img/ousean.png";
 import KampusMerdekaLogo from "../img/kampusmerdeka.png";
 import BellshadeLogo from "../img/bellshade.png";
+import OkoceLogo from "../img/OkoceLogo.webp";
 
 const Experiences = () => {
     const particlesInit = async (main) => {
@@ -28,6 +29,7 @@ const Experiences = () => {
                             <h1 className="absolute left-0 right-0 text-center text-3xl lg:text-4xl font-extrabold text-gray-800 underline decoration-pink-500">Relevant Experience</h1>
                         </div>
                         <div className="flex flex-col justify-center items-center mt-24 w-11/12 space-y-4 z-30">
+                            <ExperienceItem logo={OkoceLogo} title="Website and Social Media Developer" desc="From August - December 2023, I have been doing an internship at OK OCE Indonesia as a Website and Social Media developer who focuses on developing website applications and it's security." />
                             <ExperienceItem logo={LabKompUnsikaLogo} title="Laboratorium Assistant" desc="Since January 2023, I have been working as a computer laboratory assistant at University of Singaperbangsa Karawang. My main responsibility is to teach material from several courses such as programming algorithms, object-oriented programming, website programming and website frameworks." />
                             <ExperienceItem logo={OuseanLogo} title="Web Developer Intern" desc="Since December 2022, I have been doing an internship as a Frontend Web Developer at a startup working in the Education, Health and Human Empowerment sectors, namely PT. Ousean Global Digital. My main responsibility is to build the user interface of the website, and manage the data from the API provided by the backend team." />
                             <ExperienceItem logo={KampusMerdekaLogo} title="Apprentice Teacher" desc="Since February 2023, I have been working as a teacher at SDN Jatisampurna IV in the 'Kampus Mengajar' program organized by the Ministry of Education and Culture of the Republic of Indonesia. My main task there is to implement a 'Merdeka' curriculum which focuses on numeracy, literacy, administration, science and technology." />
