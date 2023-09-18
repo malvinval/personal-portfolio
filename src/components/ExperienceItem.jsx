@@ -9,7 +9,7 @@ const ExperienceItem = (props) => {
             <div onClick={() => {setIsDetailed(!isDetailed)}} className="collapse-title rounded-lg item-experience flex font-semibold cursor-pointer justify-between items-center text-left p-4
             bg-gradient-to-b from-slate-100 via-slate-50 to-slate-50 shadow-#0974f1">
                 <div className="flex items-center">
-                    <img src={props.logo} className={`w-10 h-10 mr-3`} alt="" />
+                    <img src={props.logo} className={`${props.customSize === "true" ? `w-${props.width} h-${props.height}` : `w-10 h-10`} mr-3`} alt="" />
                     <p className="text-transparent bg-clip-text bg-gradient-to-r from-[#01aae7] to-[#0974f1]">{props.title}</p>
                 </div>
                 <IoIosArrowDown />
