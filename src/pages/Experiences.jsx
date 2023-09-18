@@ -9,7 +9,7 @@ import LabKompUnsikaLogo from "../img/labkompunsika.png";
 import OuseanLogo from "../img/ousean.png";
 import KampusMerdekaLogo from "../img/kampusmerdeka.png";
 import BellshadeLogo from "../img/bellshade.png";
-import OkoceLogo from "../img/OkoceLogo.webp";
+import OkoceLogo from "../img/OkoceLogo.png";
 
 const Experiences = () => {
     const particlesInit = async (main) => {
