@@ -10,7 +10,7 @@ const Projects = () => {
     const particlesInit = async (main) => {
         await loadFull(main);
     };
-    const [state, handleSubmit] = useForm("meqwrgjy");
+    const [state, handleSubmit] = useForm("");
 
     if(state.succeeded) {
         const lastSubmittedTimestamp = localStorage.getItem('lastSubmittedTimestamp');
