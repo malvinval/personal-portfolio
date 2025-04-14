@@ -1,23 +1,38 @@
 import React from "react";
-import {IoMdSchool} from "react-icons/io";
-import {FaSchool} from "react-icons/fa";
+import { motion } from "framer-motion";
 
-const TimelineItem = (props) => {
-    const educationIcon = props.current ? <FaSchool className="text-blue-600 w-4 h-4" /> : <IoMdSchool className="text-blue-600 w-5 h-5" />;
-    
-    const element = (
-        <li className="timeline-item-list mb-10 ml-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-8 ring-white">
-                {educationIcon}
-            </span>
-
-            <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900"><a href={props.link}>{props.title}</a> <span className={`${props.current ? "block" : "hidden"} bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3`}>Recent</span></h3>
-            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{props.time}</time>
-            <p className="mb-4 text-base font-normal text-gray-500">{props.description}</p>
-        </li>
+const TimelineItem = ({ logo, title, desc, date, isLast }) => {
+    return (
+        <motion.div 
+            className="flex relative pb-10"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+        >
+            {!isLast && (
+                <div className="h-full w-0.5 absolute bg-gray-300 top-4 left-5" />
+            )}
+            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white border-4 border-blue-500 flex items-center justify-center z-10">
+                <img 
+                    src={logo} 
+                    alt={title}
+                    className="w-8 h-8 rounded-full object-contain"
+                />
+            </div>
+            <div className="flex-grow pl-6">
+                <div className="flex flex-col sm:flex-row sm:items-center">
+                    <h3 className="text-lg font-bold text-gray-800 dark:text-white">{title}</h3>
+                    <span className="text-sm text-gray-500 dark:text-gray-300 sm:ml-4 mt-1 sm:mt-0">
+                        {date}
+                    </span>
+                </div>
+                <p className="mt-2 text-gray-600 dark:text-gray-300">
+                    {desc}
+                </p>
+            </div>
+        </motion.div>
     );
-
-    return element;
-}
+};
 
 export default TimelineItem;

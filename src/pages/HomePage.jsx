@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import MalvinValImage from "../img/MalvinVal.png";
+import OptimizedMalvinValImage from "../img/optimized/MalvinVal.png";
+import OptimizedMalvinValWebP from "../img/optimized/MalvinVal.webp";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import ParticleConfig from "../particles/particlesjs-config.json";
+import SEO from "../components/SEO";
 
 const HomePage = () => {
     const particlesInit = async (main) => {
@@ -14,38 +17,78 @@ const HomePage = () => {
 
     const element = (
         <>
+            <SEO title="Home" description="Welcome to my portfolio. I'm Malvin Valerian, a web developer." />
             <Navbar />
-            <div className="w-full h-screen bg-white">
-                <div className="w-full flex justify-center font-poppins bg-white pt-16">
-                    <Particles id="tsparticles" options={ParticleConfig} init={particlesInit} />
-                    <div className="bg-white w-3/4 h-3/4 mt-20 flex flex-col lg:flex-row">
-                        <div className="w-full lg:w-1/2 flex justify-center items-center z-30">
-                            <img src={MalvinValImage} alt="MalvinVal'sImage" id="profile-image" className="w-full lg:w-3/5 md:w-3/5" />
+            <div className="w-full min-h-screen bg-white relative overflow-hidden">
+                <div className="w-full flex justify-center items-center font-poppins bg-white pt-16 px-4 sm:px-8 relative">
+                    <motion.div 
+                        className="absolute inset-0"
+                        style={{
+                            y: useTransform(useScroll().scrollY, [0, 300], [0, 100])
+                        }}
+                    >
+                        <Particles id="tsparticles" options={ParticleConfig} init={particlesInit} />
+                    </motion.div>
+                    <div className="bg-white w-full max-w-6xl py-12 md:py-20 flex flex-col lg:flex-row items-center">
+                        <div className="w-full lg:w-1/2 flex justify-center items-center z-30 mb-10 lg:mb-0">
+                            <picture>
+                                <source srcSet={OptimizedMalvinValWebP} type="image/webp" />
+                                <motion.img 
+                                    src={OptimizedMalvinValImage} 
+                                    alt="MalvinVal'sImage" 
+                                    className="w-4/5 sm:w-3/5 lg:w-4/5 rounded-full shadow-2xl border-4 border-blue-100 transform hover:scale-105 transition-transform duration-500"
+                                    loading="lazy"
+                                    initial={{ opacity: 0, scale: 0.9 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{ duration: 0.5, delay: 0.1 }}
+                                />
+                            </picture>
                         </div>
-                        <div className="w-full lg:w-1/2 py-20 flex flex-col justify-center z-30">
+                        <motion.div 
+                            className="w-full lg:w-1/2 flex flex-col justify-center z-30 px-4 sm:px-8"
+                            style={{
+                                y: useTransform(useScroll().scrollY, [0, 300], [0, -30])
+                            }}
+                        >
                             <div className="text-center lg:text-left">
-                                <div className="py-3">
-                                    <h1 className="text-3xl text-gray-800 font-bold tracking-normal">Hi, there! I'm a</h1>
-                                </div>
-                                <div>
-                                    <h1 className="text-4xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#01aae7] to-[#0974f1]">Web Developer</h1>
-                                </div>
+                                <motion.h1 
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.5 }}
+                                    className="text-3xl md:text-4xl text-gray-800 font-bold mb-2"
+                                >
+                                    Hi, I'm Malvin Valerian
+                                </motion.h1>
+                                <motion.h2 
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.5, delay: 0.2 }}
+                                    className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-800 mb-8"
+                                >
+                                    Web Developer
+                                </motion.h2>
                             </div>
-                            <div className="pt-8 pb-5 text-justify lg:w-3/4">
-                                <p className="text-gray-700">I am an enthusiastic, self-motivated, reliable, responsible and hard working person. I am a mature team worker and adaptable to all challenging situations. I am able to work well both in a team environment as well as using own initiative. I am able to work well under pressure and adhere to strict deadlines.</p>
-                            </div>
-                            <div className="pb-8 text-justify lg:w-3/4">
-                                <p className="text-gray-700">For the last 3 years, I have been developing website apps using JavaScript, PHP, Bootstrap Framework, TailwindCSS, Vue.js, React.js, and Laravel.</p>
+                            <div className="space-y-4 mb-8">
+                                <p className="text-gray-700 text-lg leading-relaxed">
+                                    Passionate full-stack developer with 3+ years of experience building modern web applications using JavaScript, React, Vue, and Laravel.
+                                </p>
+                                <p className="text-gray-700 text-lg leading-relaxed">
+                                    I specialize in creating responsive, performant, and accessible web experiences with clean, maintainable code.
+                                </p>
                             </div>
                             <div className="text-center lg:text-left">
-                                <Link to={"/about"} className="group btn bg-gradient-to-r from-[#01aae7] to-[#0974f1] cursor-pointer text-white border-0">
-                                    Read more about me
-                                    <span>
-                                        <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
-                                    </span>
+                                <Link 
+                                    to={"/about"} 
+                                    className="group inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:from-blue-700 hover:to-blue-900"
+                                >
+                                    View My Work
+                                    <MdOutlineKeyboardArrowRight 
+                                        size={25} 
+                                        className="ml-2 group-hover:translate-x-1 transition-transform duration-300" 
+                                    />
                                 </Link>
                             </div>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>

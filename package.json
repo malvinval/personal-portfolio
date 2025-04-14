@@ -8,8 +8,10 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "daisyui": "^2.46.1",
+    "framer-motion": "^12.6.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-helmet-async": "^2.0.5",
     "react-icons": "^4.7.1",
     "react-router-dom": "^6.6.1",
     "react-scripts": "5.0.1",
@@ -41,5 +43,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "imagemin": "^9.0.1",
+    "imagemin-pngquant": "^10.0.0",
+    "sharp": "^0.34.1"
   }
 }

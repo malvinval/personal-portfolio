@@ -9,16 +9,14 @@ import Contacts from './pages/Contacts';
 import Achievements from './pages/Achievements';
 import reportWebVitals from './reportWebVitals';
 import ContactsPageErrorElement from './pages/ContactsPageErrorElement';
+import ResumePage from './pages/ResumePage';
+import ErrorBoundary from "./components/ErrorBoundary";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomePage />,
-    children: [
-      {
-        
-      },
-    ],
+    errorElement: <ErrorBoundary />
   },
   {
     path: "/about",
@@ -57,11 +55,17 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/resume",
+    element: <ResumePage />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <RouterProvider router={router} />
+  <ErrorBoundary>
+    <RouterProvider router={router} />
+  </ErrorBoundary>
 );
 
 // If you want to start measuring performance in your app, pass a function
