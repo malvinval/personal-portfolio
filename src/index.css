@@ -4,8 +4,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,700&display=swap');
 
+:root {
+  --primary: #2A2A2A;
+  --secondary: #F5F5F5;
+  --accent: #FF6B6B;
+  --text: #333;
+}
+
+[data-theme="dark"] {
+  --primary: #1A1A1A;
+  --secondary: #2A2A2A;
+  --accent: #4ECDC4;
+  --text: #FFF;
+}
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	#profile-image {
-        width: 75%;
-    }
+  #profile-image {
+    width: 75%;
+  }
 }

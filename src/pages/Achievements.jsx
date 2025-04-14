@@ -20,7 +20,7 @@ const Achievements = () => {
             <div className="w-full h-full flex justify-center bg-white">
                 <Particles id="tsparticles" options={ParticleConfig} init={particlesInit} />
                 <div className="bg-white flex justify-center font-poppins mt-20 pt-16 w-3/4 h-3/4">
-                    <div className="bg-white w-full flex flex-wrap justify-center font-poppins">
+                    <div className="bg-white w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 font-poppins">
                         <AchievementsItem logo={DigitalentLogo} title="BNSP Certified Junior Web Developer @2021" issuer="Digital Talent • Kementrian Komunikasi and Informatika Republik Indonesia" link="https://drive.google.com/file/d/1kZDZGjG56a_IuR7jBwSj1FtalWTYzu_I/view?usp=sharing" />
                         <AchievementsItem logo={DigitalentLogo} title="BNSP Certified Junior Web Developer @2022" issuer="Digital Talent • Kementrian Komunikasi and Informatika Republik Indonesia" link="https://drive.google.com/file/d/1N2bcl9qojryDtZIWU96qxjeOfADujoAm/view?usp=sharing" />
                         <AchievementsItem logo={SemantikLogo} title="1st Place Winner of Web Development Competition" issuer="SEMANTIK 6.0 • Himpunan Teknik Informatika Universitas Singaperbangsa Karawang" link="https://drive.google.com/file/d/1eNFMbIHjJR0porNKPEbx9FiA24wHKgn8/view?usp=sharing" />
